@@ -6,6 +6,10 @@ import "@aws-amplify/ui-react/styles.css";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
+export type ButtonPropTypes = typeof Button.propTypes;
+// verify correct extension of `React.ForwardRefExoticComponent`
+export type ButtonDefaultProps = typeof Button.defaultProps;
+
 function App() {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLButtonElement>(null);
